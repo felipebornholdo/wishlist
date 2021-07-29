@@ -1,0 +1,10 @@
+server:
+  port: ${PORT:8090}
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 2717
+      database: test
+product:
+  max-amount: ${PRODUCT_MAX_AMOUNT:3}
