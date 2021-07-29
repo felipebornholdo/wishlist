@@ -4,7 +4,6 @@ import com.wishlist.api.config.ProductConfig;
 import com.wishlist.api.document.Wishlist;
 import com.wishlist.api.dto.ProductWishedDTO;
 import com.wishlist.api.dto.WishlistDTO;
-import com.wishlist.api.exception.ErrorCodeEnum;
 import com.wishlist.api.helper.MessageHelper;
 import com.wishlist.api.repository.WishlistRepository;
 import lombok.RequiredArgsConstructor;
@@ -17,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static com.wishlist.api.exception.ErrorCodeEnum.*;
+import static com.wishlist.api.exception.ErrorCodeEnum.ERROR_WISHLIST_MAX_AMOUNT_PRODUCT;
 import static com.wishlist.api.mapper.MapperConstants.wishlistMapper;
 import static java.util.Optional.ofNullable;
 
